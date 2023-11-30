@@ -1,0 +1,32 @@
+C:\Users\mj.j\source\repos\GUIdemo\GUIdemo\bin\Debug\net8.0-windows\GUIdemo.exe
+C:\Users\mj.j\source\repos\GUIdemo\GUIdemo\bin\Debug\net8.0-windows\GUIdemo.deps.json
+C:\Users\mj.j\source\repos\GUIdemo\GUIdemo\bin\Debug\net8.0-windows\GUIdemo.runtimeconfig.json
+C:\Users\mj.j\source\repos\GUIdemo\GUIdemo\bin\Debug\net8.0-windows\GUIdemo.dll
+C:\Users\mj.j\source\repos\GUIdemo\GUIdemo\bin\Debug\net8.0-windows\GUIdemo.pdb
+C:\Users\mj.j\source\repos\GUIdemo\GUIdemo\obj\Debug\net8.0-windows\GUIdemo.Form1.resources
+C:\Users\mj.j\source\repos\GUIdemo\GUIdemo\obj\Debug\net8.0-windows\GUIdemo.csproj.GenerateResource.cache
+C:\Users\mj.j\source\repos\GUIdemo\GUIdemo\obj\Debug\net8.0-windows\GUIdemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mj.j\source\repos\GUIdemo\GUIdemo\obj\Debug\net8.0-windows\GUIdemo.AssemblyInfoInputs.cache
+C:\Users\mj.j\source\repos\GUIdemo\GUIdemo\obj\Debug\net8.0-windows\GUIdemo.AssemblyInfo.cs
+C:\Users\mj.j\source\repos\GUIdemo\GUIdemo\obj\Debug\net8.0-windows\GUIdemo.csproj.CoreCompileInputs.cache
+C:\Users\mj.j\source\repos\GUIdemo\GUIdemo\obj\Debug\net8.0-windows\GUIdemo.dll
+C:\Users\mj.j\source\repos\GUIdemo\GUIdemo\obj\Debug\net8.0-windows\refint\GUIdemo.dll
+C:\Users\mj.j\source\repos\GUIdemo\GUIdemo\obj\Debug\net8.0-windows\GUIdemo.pdb
+C:\Users\mj.j\source\repos\GUIdemo\GUIdemo\obj\Debug\net8.0-windows\GUIdemo.genruntimeconfig.cache
+C:\Users\mj.j\source\repos\GUIdemo\GUIdemo\obj\Debug\net8.0-windows\ref\GUIdemo.dll
+C:\Users\mj.j\OneDrive - PBA Systems Pte. Ltd\GitHub\learn_c_shape\GUIdemo\GUIdemo\bin\Debug\net8.0-windows\GUIdemo.exe
+C:\Users\mj.j\OneDrive - PBA Systems Pte. Ltd\GitHub\learn_c_shape\GUIdemo\GUIdemo\bin\Debug\net8.0-windows\GUIdemo.deps.json
+C:\Users\mj.j\OneDrive - PBA Systems Pte. Ltd\GitHub\learn_c_shape\GUIdemo\GUIdemo\bin\Debug\net8.0-windows\GUIdemo.runtimeconfig.json
+C:\Users\mj.j\OneDrive - PBA Systems Pte. Ltd\GitHub\learn_c_shape\GUIdemo\GUIdemo\bin\Debug\net8.0-windows\GUIdemo.dll
+C:\Users\mj.j\OneDrive - PBA Systems Pte. Ltd\GitHub\learn_c_shape\GUIdemo\GUIdemo\bin\Debug\net8.0-windows\GUIdemo.pdb
+C:\Users\mj.j\OneDrive - PBA Systems Pte. Ltd\GitHub\learn_c_shape\GUIdemo\GUIdemo\obj\Debug\net8.0-windows\GUIdemo.Form1.resources
+C:\Users\mj.j\OneDrive - PBA Systems Pte. Ltd\GitHub\learn_c_shape\GUIdemo\GUIdemo\obj\Debug\net8.0-windows\GUIdemo.csproj.GenerateResource.cache
+C:\Users\mj.j\OneDrive - PBA Systems Pte. Ltd\GitHub\learn_c_shape\GUIdemo\GUIdemo\obj\Debug\net8.0-windows\GUIdemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mj.j\OneDrive - PBA Systems Pte. Ltd\GitHub\learn_c_shape\GUIdemo\GUIdemo\obj\Debug\net8.0-windows\GUIdemo.AssemblyInfoInputs.cache
+C:\Users\mj.j\OneDrive - PBA Systems Pte. Ltd\GitHub\learn_c_shape\GUIdemo\GUIdemo\obj\Debug\net8.0-windows\GUIdemo.AssemblyInfo.cs
+C:\Users\mj.j\OneDrive - PBA Systems Pte. Ltd\GitHub\learn_c_shape\GUIdemo\GUIdemo\obj\Debug\net8.0-windows\GUIdemo.csproj.CoreCompileInputs.cache
+C:\Users\mj.j\OneDrive - PBA Systems Pte. Ltd\GitHub\learn_c_shape\GUIdemo\GUIdemo\obj\Debug\net8.0-windows\GUIdemo.dll
+C:\Users\mj.j\OneDrive - PBA Systems Pte. Ltd\GitHub\learn_c_shape\GUIdemo\GUIdemo\obj\Debug\net8.0-windows\refint\GUIdemo.dll
+C:\Users\mj.j\OneDrive - PBA Systems Pte. Ltd\GitHub\learn_c_shape\GUIdemo\GUIdemo\obj\Debug\net8.0-windows\GUIdemo.pdb
+C:\Users\mj.j\OneDrive - PBA Systems Pte. Ltd\GitHub\learn_c_shape\GUIdemo\GUIdemo\obj\Debug\net8.0-windows\GUIdemo.genruntimeconfig.cache
+C:\Users\mj.j\OneDrive - PBA Systems Pte. Ltd\GitHub\learn_c_shape\GUIdemo\GUIdemo\obj\Debug\net8.0-windows\ref\GUIdemo.dll
