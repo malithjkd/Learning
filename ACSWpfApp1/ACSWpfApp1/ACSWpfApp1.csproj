@@ -9,9 +9,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-	  <Reference Include="ACS.SPiiPlusNETStandard">
-		  <HintPath>..\..\..\..\..\..\Program Files (x86)\ACS Motion Control\SPiiPlus Runtime Kit\CommonFiles\ACS.SPiiPlusNETStandard.dll</HintPath>
-	  </Reference>
+    <Reference Include="ACS.SPiiPlusNETStandard">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\ACS Motion Control\SPiiPlus Runtime Kit\CommonFiles\ACS.SPiiPlusNETStandard.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
