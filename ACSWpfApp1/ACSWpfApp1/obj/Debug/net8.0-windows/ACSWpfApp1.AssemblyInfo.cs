@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ACSWpfApp1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+431d50dfd204e87ef5998fe327201c25166ed9e3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+05aac20825231c1ad183564ded15a017e4b31514")]
 [assembly: System.Reflection.AssemblyProductAttribute("ACSWpfApp1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ACSWpfApp1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

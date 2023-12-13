@@ -11,6 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Threading;
 
 
 namespace ACSWpfApp1
@@ -77,6 +78,65 @@ namespace ACSWpfApp1
             }
 
 
+        }
+        // motor enable
+        // page 127
+
+        //axis 0
+        int motor_0_enable_state = 0;
+        int timeout_enable = 5000;
+        private void btn_enable_motor_axis_0_Click(object sender, RoutedEventArgs e)
+        {
+            if (motor_0_enable_state == 0)
+            {
+                
+                // Enable axis 0
+                Ch.Enable(Axis.ACSC_AXIS_0);
+                //Wait till axis 0 is enabled during 5 sec
+                Ch.WaitMotorEnabled(Axis.ACSC_AXIS_0, 1, timeout_enable);
+                motor_0_enable_state = 1;
+                // update button lable 
+                btn_enable_motor_0.Content = "Disable";
+
+            }
+            else 
+            {
+                // Enable axis 0
+                Ch.Disable(Axis.ACSC_AXIS_0);
+                //Wait for motor 0 to disable for 5 sec.
+                Ch.WaitMotorEnabled(Axis.ACSC_AXIS_0, 0, timeout_enable);
+                motor_0_enable_state = 0;
+                // update button lable 
+                btn_enable_motor_0.Content = "Enable";
+            }
+        }
+
+        // axis 1
+        int motor_1_enable_state = 0;
+        private void btn_enable_motor_axis_1_Click(object sender, RoutedEventArgs e)
+        {
+            if (motor_1_enable_state == 0)
+            {
+                int timeout = 5000;
+                // Enable axis 1
+                Ch.Enable(Axis.ACSC_AXIS_1);
+                //Wait till axis 1 is enabled during 5 sec
+                Ch.WaitMotorEnabled(Axis.ACSC_AXIS_0, 1, timeout_enable);
+                motor_1_enable_state = 1;
+                // update button lable 
+                btn_enable_motor_1.Content = "Disable";
+
+            }
+            else
+            {
+                // Enable axis 1
+                Ch.Disable(Axis.ACSC_AXIS_1);
+                //Wait for motor 1 to disable for 5 sec.
+                Ch.WaitMotorEnabled(Axis.ACSC_AXIS_0, 0, timeout_enable);
+                motor_1_enable_state = 0;
+                // update button lable 
+                btn_enable_motor_1.Content = "Enable";      
+            }
         }
     }
 }
