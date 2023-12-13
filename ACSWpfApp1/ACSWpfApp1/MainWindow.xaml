@@ -7,10 +7,20 @@
         mc:Ignorable="d"
         Title="ACS Buffer" Height="450" Width="800">
     <Grid>
-        <Button Name="btn_connect" Content="Connect" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Click="btn_connect_Click"/>
-        <TextBox x:Name="textBoxToUpdate" HorizontalAlignment="Left" Margin="10,235,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
-        <Button Content="Enable" HorizontalAlignment="Left" Margin="10,46,0,0" VerticalAlignment="Top" Width="48"/>
-        <Button Content="Dissable" HorizontalAlignment="Left" Margin="82,46,0,0" VerticalAlignment="Top"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="239" Margin="10,55,0,0" VerticalAlignment="Top" Width="159" Opacity="0.65"/>
+
+        <Button x:Name="btn_connect" Content="Connect" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Click="btn_connect_Click"/>
+        <TextBox x:Name="textBoxToUpdate" HorizontalAlignment="Left" Margin="75,11,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="219" RenderTransformOrigin="0.695,-4.539" />
+        <Button x:Name="btn_enable_motor_0" Content="Enable" HorizontalAlignment="Left" Margin="118,86,0,0" VerticalAlignment="Top" Width="48" Click="btn_enable_motor_axis_0_Click" RenderTransformOrigin="0.197,0.653"/>
+        <Label Content="Axis" HorizontalAlignment="Left" Margin="13,55,0,0" VerticalAlignment="Top" Width="43" Opacity="0.65"/>
+        <Label Content="X - Top - 0" HorizontalAlignment="Left" Margin="101,55,0,0" VerticalAlignment="Top" Width="65"/>
+        <Label Content="Motor state" HorizontalAlignment="Left" Margin="13,83,0,0" VerticalAlignment="Top" Width="75" Opacity="0.65"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="239" Margin="216,55,0,0" VerticalAlignment="Top" Width="159" Opacity="0.65"/>
+        <Button x:Name="btn_enable_motor_1" Content="Enable" HorizontalAlignment="Left" Margin="324,86,0,0" VerticalAlignment="Top" Width="48" Click="btn_enable_motor_axis_1_Click" RenderTransformOrigin="0.197,0.653"/>
+        <Label Content="Axis" HorizontalAlignment="Left" Margin="219,55,0,0" VerticalAlignment="Top" Width="43" Opacity="0.65"/>
+        <Label Content="Y - Bot - 1" HorizontalAlignment="Left" Margin="307,55,0,0" VerticalAlignment="Top" Width="65"/>
+        <Label Content="Motor state" HorizontalAlignment="Left" Margin="219,83,0,0" VerticalAlignment="Top" Width="75" Opacity="0.65"/>
+        <Button Name="Buffer_exc" Content="Run homing buffer 4" HorizontalAlignment="Left" Margin="496,86,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
