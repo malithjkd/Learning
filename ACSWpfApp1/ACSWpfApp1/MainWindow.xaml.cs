@@ -12,6 +12,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Threading;
+using System.Reflection;
 
 
 namespace ACSWpfApp1
@@ -21,14 +22,14 @@ namespace ACSWpfApp1
     /// </summary>
     public partial class MainWindow : Window
     {
-        
+
 
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        
+
 
         // Globle ref
         // create communication object
@@ -89,7 +90,7 @@ namespace ACSWpfApp1
         {
             if (motor_0_enable_state == 0)
             {
-                
+
                 // Enable axis 0
                 Ch.Enable(Axis.ACSC_AXIS_0);
                 //Wait till axis 0 is enabled during 5 sec
@@ -99,7 +100,7 @@ namespace ACSWpfApp1
                 btn_enable_motor_0.Content = "Disable";
 
             }
-            else 
+            else
             {
                 // Enable axis 0
                 Ch.Disable(Axis.ACSC_AXIS_0);
@@ -135,8 +136,44 @@ namespace ACSWpfApp1
                 Ch.WaitMotorEnabled(Axis.ACSC_AXIS_0, 0, timeout_enable);
                 motor_1_enable_state = 0;
                 // update button lable 
-                btn_enable_motor_1.Content = "Enable";      
+                btn_enable_motor_1.Content = "Enable";
             }
+
+        }
+        // Page 67 Run buffer
+
+        private void btn_update_buffer_Click(object sender, RoutedEventArgs e)
+        {
+            String file = "C:\\Users\\mj.j\\OneDrive - PBA Systems Pte. Ltd\\GitHub\\stability\\uplode_buffer.prg";
+            // Opens a file to load
+            Ch.LoadBuffersFromFile(file);
+
+            
+        }
+        // Page 70 Run buffer
+
+        private void Buffer_exc_Click(object sender, RoutedEventArgs e)
+        {
+            // The method compiles ACSPL+ program in buffer 
+            Ch.CompileBuffer(ProgramBuffer.ACSC_BUFFER_10);
+            // Run the buffer 
+            Ch.RunBuffer((ProgramBuffer)10, null);
+
+        }
+
+        private void btn_homing_0_Click(object sender, RoutedEventArgs e)
+        {
+            // Run the buffer 
+            Ch.RunBuffer((ProgramBuffer)4, null);
+        }
+
+        private void btn_homing_1_Click(object sender, RoutedEventArgs e)
+        {
+            // Run the buffer 
+            Ch.RunBuffer((ProgramBuffer)5, null);
         }
     }
+
+
+    
 }
