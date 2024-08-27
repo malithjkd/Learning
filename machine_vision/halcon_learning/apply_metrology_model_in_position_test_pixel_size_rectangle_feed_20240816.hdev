@@ -10,7 +10,7 @@
 <c>* </c>
 <c>* Display initializations</c>
 <l>dev_update_off ()</l>
-<l>read_image (Image, 'Pic_2024_08_02_152906_77')</l>
+<l>read_image (Image, 'Pic_2024_08_16_155928_68')</l>
 <l>get_image_size (Image, Width, Height)</l>
 <l>dev_close_window ()</l>
 <l>*dev_open_window_fit_image (Image, 0, 0, -1, -1, WindowHandle)</l>
@@ -27,11 +27,11 @@
 <c></c>
 <c>* Define the approximate position and the measure</c>
 <c>* tolerance for the rectangles</c>
-<l>RectangleInitRow := [1170, 1168, 1166, 1164, 1162, 1158, 1156, 1154, 1152]</l>
-<l>RectangleInitColumn := [352, 590, 828, 1060, 1299, 1530 , 1762, 2003, 2235]</l>
+<l>RectangleInitRow := [995, 995, 995, 995, 995, 995, 995, 995, 995]</l>
+<l>RectangleInitColumn := [485, 700, 915, 1128, 1340, 1552 , 1764, 1976, 2188]</l>
 <l>RectangleInitPhi := [0, 0, 0, 0, 0, 0, 0, 0, 0]</l>
-<l>RectangleInitLength1 := [25, 25, 25, 25, 25, 25, 25, 25, 25]</l>
-<l>RectangleInitLength2 := [602, 602, 602, 602, 602, 610, 602 , 602, 602]</l>
+<l>RectangleInitLength1 := [21, 22, 22, 22, 22, 22, 22, 22, 22]</l>
+<l>RectangleInitLength2 := [538, 530, 538, 530, 538, 538, 538, 538, 538]</l>
 <l>RectangleTolerance := 15</l>
 <c>* </c>
 <c>* Prepare the metrology model data structure</c>

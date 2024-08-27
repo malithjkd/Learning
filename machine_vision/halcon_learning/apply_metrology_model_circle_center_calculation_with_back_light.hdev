@@ -3,41 +3,41 @@
 <procedure name="main">
 <interface/>
 <body>
-<c></c>
-<c>* This example shows the usage of the metrology model</c>
-<c>* to measure circles and rectangles with subpixel</c>
-<c>* accuracy under challenging conditions easily.</c>
+<c>* Homing position clculation using images</c>
+<c>* Large dot center</c>
 <c>* </c>
 <c>* Display initializations</c>
 <l>dev_update_off ()</l>
-<l>read_image (Image, 'Pic_2024_08_02_150516_38')</l>
+<l>read_image (Image, 'Pic_2024_08_21_134635_3')</l>
 <l>get_image_size (Image, Width, Height)</l>
 <c></c>
 <c>* </c>
 <c>* Define the approximate position and the measure</c>
 <c>* tolerance for the circles</c>
-<l>RowCircle := [1140]</l>
+<l>RowCircle := [730]</l>
 <l>CircleInitRow := [RowCircle]</l>
-<l>CircleInitColumn := [1320]</l>
+<l>CircleInitColumn := [1680]</l>
 <c></c>
-<c>* Function to create </c>
+<c>* Function to create cross of the approximate center</c>
 <c>* gen_cross_contour_xld (Cross1, CircleInitRow, CircleInitColumn, sixe of the cross, angle of the cross in radian)</c>
 <c></c>
 <l>gen_cross_contour_xld (Cross1, CircleInitRow, CircleInitColumn, 30, 0.785398)</l>
-<l>CircleInitRadius := [590]</l>
+<c></c>
+<c>* Defind eht approximate circle center value</c>
+<l>CircleInitRadius := [510]</l>
 <c></c>
 <l>*CircleRadiusTolerance := 130</l>
 <c></c>
-<l>CircleRadiusTolerance := 50</l>
+<c>* Search radius / dipend on the position accuracy movement</c>
+<l>CircleRadiusTolerance := 80</l>
 <c></c>
-<c></c>
+<c>* create mesument model</c>
 <l>create_metrology_model (MetrologyHandle)</l>
-<c></c>
 <l>set_metrology_model_image_size (MetrologyHandle, Width, Height)</l>
 <c></c>
+<c>* Set the values in mesurment function which gives the cicle radius and circle center</c>
 <l>*add_metrology_object_circle_measure (MetrologyHandle, Y_axis_location , X_axis_location , radius_of_circle, CircleRadiusTolerance, 5, MeasureSigma, 2, [], [], MetrologyCircleIndices)</l>
-<c></c>
-<l>add_metrology_object_circle_measure (MetrologyHandle, RowCircle , CircleInitColumn, CircleInitRadius, CircleRadiusTolerance, 20, 0.4, 1.8, ['measure_distance'], [40], MetrologyCircleIndices)</l>
+<l>add_metrology_object_circle_measure (MetrologyHandle, RowCircle , CircleInitColumn, CircleInitRadius, CircleRadiusTolerance, 20, 1.2, 1.8, ['measure_distance'], [40], MetrologyCircleIndices)</l>
 <c></c>
 <c></c>
 <l>set_metrology_object_param (MetrologyHandle, MetrologyCircleIndices, 'measure_transition', 'uniform')</l>
