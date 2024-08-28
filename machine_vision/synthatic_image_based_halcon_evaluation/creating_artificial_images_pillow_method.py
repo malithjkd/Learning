@@ -1,9 +1,14 @@
+# create sinthatic image using python and calculate radius and x and y position.
+# method works up to this image size. Now the memory is not enough to cualtate the imageing. 
+
+
+
+
 import halcon as ha
 import os
 import numpy as np
 from PIL import Image
 from PIL import Image, ImageDraw
-
 
 
 # Create a new image
