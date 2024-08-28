@@ -8,16 +8,16 @@
 <c>* </c>
 <c>* Display initializations</c>
 <l>dev_update_off ()</l>
-<l>read_image (Image, 'Pic_2024_08_16_152111_5')</l>
+<l>read_image (Image, 'circle_image.bmp')</l>
 <c></c>
 <l>get_image_size (Image, Width, Height)</l>
 <c></c>
 <c>* </c>
 <c>* Define the approximate position and the measure</c>
 <c>* tolerance for the circles</c>
-<l>RowCircle := [1090]</l>
+<l>RowCircle := [1024]</l>
 <l>CircleInitRow := [RowCircle]</l>
-<l>CircleInitColumn := [1300]</l>
+<l>CircleInitColumn := [1295]</l>
 <c></c>
 <c>* Function to create cross of the approximate center</c>
 <c>* gen_cross_contour_xld (Cross1, CircleInitRow, CircleInitColumn, sixe of the cross, angle of the cross in radian)</c>
