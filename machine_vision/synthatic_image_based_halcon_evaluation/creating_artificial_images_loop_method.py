@@ -6,17 +6,51 @@ import os
 import numpy as np
 from PIL import Image
 from PIL import Image, ImageDraw
+import math
+
+
+image_size_in_pix_column    = 2592 
+image_size_in_pix_row       = 2048
+physical_size_of_pixel      = 475         # value is written in nm (nano meaters) 
 
 
 # Create a sample NumPy array
 # data = np.random.randint(0, 255, (100, 100, 3))  # color images
-data = np.zeros((2048, 2592))  # Black and white image
-data[:][:] = 255
+synthetic_image_np = np.zeros((image_size_in_pix_row, image_size_in_pix_column))    # Creating Black image
+synthetic_image_np[:][:] = 255                                                # converting it to Creating white image
+
+# Consider one pixel size is 0.475um or 475 nm
+field_of_view_column = physical_size_of_pixel*image_size_in_pix_column
+field_of_view_row = physical_size_of_pixel* image_size_in_pix_row
+
+# Get the field of view (FOV)
+print("field of view x (column): " + str(field_of_view_column/1000000) + " mm")
+print("field of view Y (row): " + str(field_of_view_row/1000000) + " mm")
+
+# get the center location
+image_center_row = synthetic_image_np.shape[0] /2
+image_center_column = synthetic_image_np.shape[1] /2
+
+
+for x in range (0,image_size_in_pix_column,1):
+    dx = x - image_center_row
+    for y in range (0,image_size_in_pix_row,1):
+        dy = y - image_center_column
+        distance = math.sqrt(dy*dy + dx*dx)
+        if distance < 526.3:
+            synthetic_image_np[x][y] = 0
+            #print (x,y)
+
+#synthetic_image_np[image_center_row][image_center_column] = 0 
+
+
+print(image_center_column, image_center_row)
+
 # Convert data type to uint8 (optional, if needed)
-data = data.astype(np.uint8)  
-print(data.shape)
+image_array = synthetic_image_np.astype(np.uint8)  
+
 # Convert to PIL Image
-image = Image.fromarray(data)
+image = Image.fromarray(image_array)
 
 # Save as BMP
 image.save('output.bmp')
@@ -26,19 +60,11 @@ image.save('output.bmp')
 class method5:
     def __init__(self,image_path):
         self.image_path = image_path # dummy variable
-        #self.image = ha.read_image(r"C:\Users\mj.j\OneDrive - PBA Systems Pte. Ltd\GitHub\Github\2D_optical_vision_mapping\assets\logos\PBA_logo.png")
-        #self.image = ha.read_image(r"C:\Users\mj.j\OneDrive - PBA Systems Pte. Ltd\Malith - R&D\dot_center_calcualtion\images\Pic_2024_07_30_092609_53")
-        #self.image = ha.read_image("Pic_2024_07_30_092609_53.bmp")
         self.image = ha.read_image(self.image_path)
-
-    def calculate_reagens(self):
-        region = ha.threshold(self.image_path, 0, 122)
-        num_regions = ha.count_obj(ha.connection(region))
-        print(f'Number of Regions: {num_regions}')
 
     def calculate_center(self):
         self.width,self.height=ha.get_image_size_s(self.image)
-        #print(self.width,self.height)
+        print(self.width,self.height)
 
         # define the dot location
         Define_Circle_Row = 1024  
