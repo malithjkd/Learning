@@ -30,7 +30,7 @@ new_image = image2.resize((2592, 2048), Image.LANCZOS)      # compress the image
 
 # save image
 new_image.show()
-new_image.save('circle_image.bmp')
+new_image.save('circle_image_pillow.bmp')
 
 
 
